@@ -6,5 +6,8 @@
   html{background:yellow url(bg.gif) center center}
 </style>
 
-<audio autoplay loop src="party.mp3" type="audio/mpeg">
-</audio>
+<audio autoplay loop src="party.mp3" type="audio/mpeg"></audio>
+
+<script>setInterval(function(){
+document.querySelector('html').style.backgroundSize = (Math.floor(Math.random() * 55) + 1) +'%';
+}, 500);</script>
