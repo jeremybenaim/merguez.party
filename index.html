@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 
-<title></title>
+<title>/o/</title>
 
 <style>
   html{background:yellow url(bg.gif) center center}
+  a{background: #fff; position: absolute; bottom: 0; left: 0; width: 100%; color: #555; font-family: sans-serif; text-decoration: none; padding: 0.5em; text-align: right; box-sizing: border-box}
 </style>
 
 <audio autoplay loop src="party.mp3" type="audio/mpeg"></audio>
 
-<script>setInterval(function(){
-document.querySelector('html').style.backgroundSize = (Math.floor(Math.random() * 55) + 1) +'%';
-}, 500);</script>
+<a href="http://jeremybenaim.com">&copy; 2016 - jeremybenaim.com</a>
+
+<script>
+setInterval(function(){
+  document.querySelector('html').style.backgroundSize = (Math.floor(Math.random() * 55) + 1) +'%';
+
+  if(document.title === "/o/") {
+    document.title = "\\o\\"
+  } else {
+    document.title = "/o/"
+  }
+}, 500);
+</script>
